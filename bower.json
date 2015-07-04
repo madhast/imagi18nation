@@ -1,0 +1,9 @@
+{
+  "name": "imagi18nation",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "bootstrap-select": "~1.7.3"
+  },
+  "private": true
+}
