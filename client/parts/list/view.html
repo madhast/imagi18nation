@@ -1,24 +1,36 @@
 <template name="list">
+<form  class="form-horizontal">
+
   {{#each langs}}
-      <form class="modal-content form-horizontal">
-        <ul class="list-group">
-          <li class="list-group-item">
+  <div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+          <div class="col-md-5">
             <div class="form-group">
-              <label for="" class="col-lg-2 text-right">Русский (RU):</label>
-              <div class="col-lg-10">
-                <input type="text" class="form-control" id="lang" value="Удалить">
+              <label class="col-lg-2">Ключ</label>
+              <div class="col-lg-8">
+                <input type="text" class="form-control" placeholder="Ключ" value="REMOVE">
               </div>
             </div>
-          </li>
-          <li class="list-group-item">
+          </div>
+          <div class="col-md-7">
             <div class="form-group">
-              <label for="" class="col-lg-2 text-right">Английский (EN):</label>
+              <label class="col-lg-2">RU</label>
               <div class="col-lg-10">
-                <input type="text" class="form-control" id="lang" value="Remove">
+                <input type="text" class="form-control" value="Удалить">
               </div>
             </div>
-          </li>
-        </ul>
-      </form>
-  {{/each}}
+
+            <div class="form-group">
+              <label class="col-lg-2">EN</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" value="Remove">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    {{/each}}
+</form>
 </template>
